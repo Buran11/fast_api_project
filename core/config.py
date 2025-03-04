@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 from pathlib import Path
 env_path = Path(".") / ".env"

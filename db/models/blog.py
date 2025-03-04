@@ -6,12 +6,10 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import relationship
 
-from db.base import Base
+from db.base_class import Base
 
 
 class Blog(Base):
-    __tablename__ = 'blog'
-
     id = Column(Integer, primary_key=True)
     title = Column(String, nullable=False)
     slug = Column(String, nullable=False)
